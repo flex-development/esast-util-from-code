@@ -1512,6 +1512,11 @@ __metadata:
     vite-tsconfig-paths: "npm:4.3.2"
     vitest: "npm:1.4.0"
     yaml-eslint-parser: "npm:1.2.2"
+  peerDependencies:
+    vfile: ">=6.0.1"
+  peerDependenciesMeta:
+    vfile:
+      optional: true
   languageName: unknown
   linkType: soft
 
