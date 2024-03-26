@@ -144,6 +144,14 @@
     "vitest": "1.4.0",
     "yaml-eslint-parser": "1.2.2"
   },
+  "peerDependencies": {
+    "vfile": ">=6.0.1"
+  },
+  "peerDependenciesMeta": {
+    "vfile": {
+      "optional": true
+    }
+  },
   "resolutions": {
     "chai": "5.1.0"
   },

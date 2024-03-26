@@ -916,7 +916,8 @@ const config = {
     {
       files: '**/*.+(cjs|js|mjs)',
       rules: {
-        '@typescript-eslint/explicit-member-accessibility': 0
+        '@typescript-eslint/explicit-member-accessibility': 0,
+        '@typescript-eslint/prefer-readonly': 0
       }
     },
     {
