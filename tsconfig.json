@@ -31,8 +31,7 @@
     "paths": {
       "#fixtures/*": ["__fixtures__/*"],
       "#src/*": ["src/*"],
-      "#tests/*": ["__tests__/*"],
-      "@flex-development/esast-util-from-code": ["dist/index", "src/index"]
+      "#tests/*": ["__tests__/*"]
     },
     "preserveConstEnums": true,
     "preserveSymlinks": false,
@@ -52,7 +51,12 @@
     "useUnknownInCatchVariables": true,
     "verbatimModuleSyntax": true
   },
-  "exclude": ["**/coverage", "**/dist", "**/node_modules"],
+  "exclude": [
+    "**/coverage",
+    "**/dist",
+    "**/node_modules",
+    "__fixtures__/*.ts.txt"
+  ],
   "include": [
     "**/**/*.json",
     "**/**/*.mjs",
@@ -61,8 +65,7 @@
     "**/.*.json",
     "**/.*.mjs",
     "**/.*.mts",
-    "**/.*.ts",
-    ".eslintrc*cjs"
+    "**/.*.ts"
   ],
   "mdx": {
     "plugins": [

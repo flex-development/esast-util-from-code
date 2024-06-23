@@ -17,8 +17,11 @@ hmarr
 iife
 jchen
 kaisugi
+kata
+keyid
 lcov
 lintstagedrc
+mdast
 mkbuild
 mlly
 nocheck
@@ -27,6 +30,7 @@ pathe
 pkgs
 preid
 shfmt
+tokenizes
 unstub
 vates
 vfile

@@ -3,5 +3,4 @@
  * @module tests/interfaces
  */
 
-export type { default as Mock } from './mock'
-export type { default as Spy } from './spy'
+export type { default as MockInstance } from './mock-instance'

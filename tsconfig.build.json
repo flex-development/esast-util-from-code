@@ -11,5 +11,6 @@
   },
   "exclude": [],
   "extends": "./tsconfig.json",
+  "files": ["typings/@flex-development/vfile-lexer/index.d.mts"],
   "include": ["./dist/*"]
 }

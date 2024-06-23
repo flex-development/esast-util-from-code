@@ -1,0 +1,85 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`integration:constructs/comment > block > should tokenize block comment (unterminated) 1`] = `
+tokens[3]
+	├─0 sof (1:1-1:1)
+	│		 value: null
+	│		 whitespace: ""
+	├─1 comment (1:1-1:8)
+	│		 value: "/* i++ "
+	│		 whitespace: ""
+	│		 kind: "block"
+	├─2 eof (1:8-1:8)
+	│		 value: null
+	│		 whitespace: ""
+`;
+
+exports[`integration:constructs/comment > block > should tokenize block comment 1`] = `
+tokens[3]
+	├─0 sof (1:1-1:1)
+	│		 value: null
+	│		 whitespace: ""
+	├─1 comment (1:1-1:10)
+	│		 value: "/* i++ */"
+	│		 whitespace: ""
+	│		 kind: "block"
+	├─2 eof (1:10-1:10)
+	│		 value: null
+	│		 whitespace: ""
+`;
+
+exports[`integration:constructs/comment > docblock > should tokenize docblock comment (unterminated) 1`] = `
+tokens[3]
+	├─0 sof (1:1-1:1)
+	│		 value: null
+	│		 whitespace: ""
+	├─1 comment (1:1-4:2)
+	│		 value: "/**\\n * @file Constructs - comment\\n * @module esast-util-from-code/constructs/comment\\n "
+	│		 whitespace: ""
+	│		 kind: "docblock"
+	├─2 eof (4:2-4:2)
+	│		 value: null
+	│		 whitespace: ""
+`;
+
+exports[`integration:constructs/comment > docblock > should tokenize docblock comment 1`] = `
+tokens[3]
+	├─0 sof (1:1-1:1)
+	│		 value: null
+	│		 whitespace: ""
+	├─1 comment (1:1-4:4)
+	│		 value: "/**\\n * @file Constructs - comment\\n * @module esast-util-from-code/constructs/comment\\n */"
+	│		 whitespace: ""
+	│		 kind: "docblock"
+	├─2 eof (4:4-4:4)
+	│		 value: null
+	│		 whitespace: ""
+`;
+
+exports[`integration:constructs/comment > hashbang > should tokenize hashbang comment 1`] = `
+tokens[3]
+	├─0 sof (1:1-1:1)
+	│		 value: null
+	│		 whitespace: ""
+	├─1 comment (1:1-1:20)
+	│		 value: "#!/usr/bin/env node"
+	│		 whitespace: ""
+	│		 kind: "hashbang"
+	├─2 eof (2:1-2:1)
+	│		 value: null
+	│		 whitespace: "\\r"
+`;
+
+exports[`integration:constructs/comment > line > should tokenize line comment 1`] = `
+tokens[3]
+	├─0 sof (1:1-1:1)
+	│		 value: null
+	│		 whitespace: ""
+	├─1 comment (1:1-1:19)
+	│		 value: "// const j = k + 3"
+	│		 whitespace: ""
+	│		 kind: "line"
+	├─2 eof (1:19-1:19)
+	│		 value: null
+	│		 whitespace: ""
+`;
