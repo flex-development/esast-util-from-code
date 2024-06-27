@@ -19,7 +19,8 @@ describe('unit:Token', () => {
       subject = new TestSubject(tt.sof, {
         end: point,
         next: eof = new TestSubject(tt.eof, { end: point, start: point }),
-        start: point
+        start: point,
+        value: null
       })
     })
 

@@ -11,6 +11,7 @@ import type {
 } from '@flex-development/vfile-lexer'
 import { ok } from 'devlop'
 import { tt } from './enums'
+import type { TokenInfo, TokenValue } from './types'
 
 /**
  * A span of one (`1`) or more character codes.
@@ -70,18 +71,20 @@ class Token<T extends TokenType = TokenType> implements IToken<T> {
    * @public
    * @readonly
    * @instance
-   * @member {K} type
+   * @member {T} type
    */
   public readonly type: T
 
   /**
    * Token value.
    *
+   * @see {@linkcode TokenValue}
+   *
    * @public
    * @instance
-   * @member {string | null} value
+   * @member {TokenValue} value
    */
-  public value?: string | null
+  public value: TokenValue
 
   /**
    * Leading whitespace.
@@ -95,12 +98,12 @@ class Token<T extends TokenType = TokenType> implements IToken<T> {
   /**
    * Create a new token.
    *
-   * @see {@linkcode TokenFields}
+   * @see {@linkcode TokenInfo}
    *
    * @param {T} type - Token type
-   * @param {TokenFields} info - Token fields
+   * @param {TokenInfo} info - Token data
    */
-  constructor(type: T, info: TokenFields) {
+  constructor(type: T, info: TokenInfo) {
     ok(typeof type === 'string', 'expected `kind` to be a string')
     ok(type.length > 0, 'expected `kind` to be a non-empty string')
 

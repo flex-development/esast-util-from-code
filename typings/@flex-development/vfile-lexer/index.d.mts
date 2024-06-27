@@ -1,5 +1,6 @@
 import type { tt } from '#src/enums'
 import type { RaiseOptions } from '#src/interfaces'
+import type { TokenValue } from '#src/types'
 import type {
   Code,
   Point,
@@ -12,7 +13,7 @@ declare module '@flex-development/vfile-lexer' {
     /**
      * Token value.
      */
-    value?: string | null
+    value: TokenValue
 
     /**
      * Leading whitespace.

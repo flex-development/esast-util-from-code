@@ -7,6 +7,12 @@ import * as testSubject from '../index'
 
 describe('e2e:esast-util-from-code', () => {
   it('should expose public api', () => {
-    expect(testSubject).to.be.empty
+    expect(testSubject).to.have.keys([
+      'Lexer',
+      'Token',
+      'errors',
+      'isLineEnding',
+      'tt'
+    ])
   })
 })
