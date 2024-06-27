@@ -98,6 +98,7 @@
     "@flex-development/mkbuild": "1.0.0-alpha.23",
     "@flex-development/mlly": "1.0.0-alpha.18",
     "@flex-development/pathe": "2.0.0",
+    "@flex-development/unist-util-types": "1.6.1",
     "@stylistic/eslint-plugin": "2.2.2",
     "@types/chai": "4.3.16",
     "@types/eslint": "8.56.10",
@@ -155,6 +156,7 @@
     "yaml-eslint-parser": "1.2.3"
   },
   "resolutions": {
+    "@flex-development/unist-util-types": "1.6.1",
     "chai": "5.1.1"
   },
   "engines": {

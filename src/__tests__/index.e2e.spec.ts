@@ -12,7 +12,9 @@ describe('e2e:esast-util-from-code', () => {
       'Token',
       'errors',
       'isLineEnding',
-      'tt'
+      'keywords',
+      'tt',
+      'types'
     ])
   })
 })
