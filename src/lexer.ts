@@ -4,12 +4,14 @@
  */
 
 import {
+  stringifyPosition
+} from '@flex-development/unist-util-stringify-position'
+import {
   Lexer as VFileLexer,
   type Point,
   type Position,
   type TokenizeContext
 } from '@flex-development/vfile-lexer'
-import { stringifyPosition } from 'unist-util-stringify-position'
 import type { VFile, Value } from 'vfile'
 import { VFileMessage } from 'vfile-message'
 import { constructs } from './constructs'
@@ -113,7 +115,7 @@ class Lexer extends VFileLexer {
     msg.actual = <string | undefined>info?.actual
     msg.expected = info?.expected
     msg.fatal = info?.fatal ?? false
-    msg.message = `${msg.reason} (${stringifyPosition(place)})`
+    msg.message = `${reason} (${stringifyPosition(place, { offsets: false })})`
     msg.source = 'esast-util-from-code'
     msg.url = `https://github.com/flex-development/${msg.source}`
 
