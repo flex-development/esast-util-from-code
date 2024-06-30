@@ -3,7 +3,7 @@
  * @module esast-util-from-code/constructs/tests/integration/keyid
  */
 
-import { tt } from '#src/enums'
+import { tt, types } from '#src/enums'
 import Lexer from '#src/lexer'
 import { chars } from '@flex-development/vfile-lexer'
 
@@ -23,7 +23,7 @@ describe('integration:constructs/keyid', () => {
     ['chars.underscore, start', chars.underscore + 'id'],
     ['private identifier', chars.hash + 'indices'],
     ['public identifier', tt.keyid],
-    ['keyword', 'this'],
+    ['keyword', types.this],
     ['unicode escape sequence, escaped', '\\u4F60\\u597D'],
     ['unicode escape sequence', '\u4F60\u597D']
   ])('should tokenize identifier and keywords (%s)', (_, value) => {

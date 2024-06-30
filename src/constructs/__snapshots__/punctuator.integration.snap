@@ -2,364 +2,280 @@
 
 exports[`integration:constructs/punctuator > should tokenize chars.ampersand 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "&"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "&" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.asterisk 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "*"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "*" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.at 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "@"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "@" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.backslash 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "\\\\"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "\\\\" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.backtick 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "\`"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "\`" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.bar 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "|"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "|" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.caret 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "^"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "^" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.colon 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: ":"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator ":" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.comma 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: ","
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "," (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.dot 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "."
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "." (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.equal 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "="
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "=" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.exclamation 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "!"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "!" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.gt 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: ">"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator ">" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.hash 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "#"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "#" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.leftBrace 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "{"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "{" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.leftBracket 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "["
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "[" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.leftParen 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "("
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "(" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.lt 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "<"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "<" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.minus 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "-"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "-" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.percent 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "%"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "%" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.plus 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "+"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "+" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.question 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "?"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "?" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.rightBrace 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "}"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "}" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.rightBracket 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "]"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "]" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.rightParen 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: ")"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator ")" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.semicolon 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: ";"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator ";" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.slash 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "/"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "/" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/punctuator > should tokenize chars.tilde 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "~"
-	│		 whitespace: ""
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "~" (1:1-1:2, 0-1)
+│     whitespace: ""
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;

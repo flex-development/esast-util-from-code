@@ -1532,6 +1532,8 @@ __metadata:
     "@flex-development/mlly": "npm:1.0.0-alpha.18"
     "@flex-development/pathe": "npm:2.0.0"
     "@flex-development/tutils": "npm:6.0.0-alpha.25"
+    "@flex-development/unist-util-builder": "npm:2.0.0"
+    "@flex-development/unist-util-inspect": "npm:1.0.0"
     "@flex-development/unist-util-types": "npm:1.6.1"
     "@flex-development/vfile-lexer": "flex-development/vfile-lexer#commit=a4837a7d1a9c63036ed522c0e844cd7c0ed78428"
     "@stylistic/eslint-plugin": "npm:2.3.0"
@@ -1937,6 +1939,36 @@ __metadata:
   peerDependencies:
     typescript: ">=4.7"
   checksum: 10/161901c611f0049464cc53e128b8285f12a9dc6ef551a8c8a4bd47d9e2d73afcc53c25fbcd18189dcda28a460ea64e8801398159b6daaaff63d0552d140f1f02
+  languageName: node
+  linkType: hard
+
+"@flex-development/unist-util-builder@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@flex-development/unist-util-builder@npm:2.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Funist-util-builder%2F2.0.0%2F2589c6774a811c50c2d08501dfcd1a5ed551c883"
+  dependencies:
+    "@flex-development/unist-util-types": "npm:1.6.1"
+    "@types/unist": "npm:3.0.2"
+  checksum: 10/58e6dc90395b636d7c02d5ab5966a8fbdaf0e9a01c8ff99398e98f8570b422b9c08492365968a85517d6d7991f095a11732a37f775a5af8773c2dda2f673de6d
+  languageName: node
+  linkType: hard
+
+"@flex-development/unist-util-inspect@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@flex-development/unist-util-inspect@npm:1.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Funist-util-inspect%2F1.0.0%2F2585616dd8111de66e7ddc2d846a5e077c57c982"
+  dependencies:
+    "@flex-development/unist-util-stringify-position": "npm:1.0.0"
+    "@types/unist": "npm:3.0.2"
+  checksum: 10/c1b81c3191e2be2bbbcff95f1a2e99afe4360cd72eebbe0b5401499fd9c89c9fa2e42adc7f875fbc7a6204bb75d33a2ad7f0b53a19bca4547182d784143a21d8
+  languageName: node
+  linkType: hard
+
+"@flex-development/unist-util-stringify-position@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@flex-development/unist-util-stringify-position@npm:1.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Funist-util-stringify-position%2F1.0.0%2Fb2a5cbc97f53cee6e215f15a908a78109e543b48"
+  dependencies:
+    "@flex-development/unist-util-types": "npm:1.6.1"
+    "@types/unist": "npm:3.0.2"
+  checksum: 10/085cfe2ce2398c1aa0f986ea54789a1cb1df69a348af7f2e013a443fd5672c76c8d2764cacefa0babe9545ed63a623876e0eb2c989a9516dad55e216d5bb9a53
   languageName: node
   linkType: hard
 

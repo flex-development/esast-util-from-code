@@ -98,6 +98,8 @@
     "@flex-development/mkbuild": "1.0.0-alpha.23",
     "@flex-development/mlly": "1.0.0-alpha.18",
     "@flex-development/pathe": "2.0.0",
+    "@flex-development/unist-util-builder": "2.0.0",
+    "@flex-development/unist-util-inspect": "1.0.0",
     "@flex-development/unist-util-types": "1.6.1",
     "@stylistic/eslint-plugin": "2.3.0",
     "@types/chai": "4.3.16",

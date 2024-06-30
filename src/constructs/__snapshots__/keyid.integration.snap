@@ -2,142 +2,111 @@
 
 exports[`integration:constructs/keyid > should fail on template placeholder opener 1`] = `
 tokens[4]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 punctuator (1:1-1:2)
-	│		 value: "$"
-	│		 whitespace: ""
-	├─2 punctuator (1:2-1:3)
-	│		 value: "{"
-	│		 whitespace: ""
-	├─3 eof (1:3-1:3)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 punctuator "$" (1:1-1:2, 0-1)
+│     whitespace: ""
+├─2 punctuator "{" (1:2-1:3, 1-2)
+│     whitespace: ""
+└─3 eof null (1:3-1:3, 2-2)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/keyid > should tokenize identifier and keywords (chars.dollar) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 keyid (1:1-1:2)
-	│		 value: "$"
-	│		 whitespace: ""
-	│		 private: false
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 keyid "$" (1:1-1:2, 0-1)
+│     whitespace: ""
+│     private: false
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/keyid > should tokenize identifier and keywords (chars.dollar, start) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 keyid (1:1-1:6)
-	│		 value: "$html"
-	│		 whitespace: ""
-	│		 private: false
-	├─2 eof (1:6-1:6)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 keyid "$html" (1:1-1:6, 0-5)
+│     whitespace: ""
+│     private: false
+└─2 eof null (1:6-1:6, 5-5)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/keyid > should tokenize identifier and keywords (chars.underscore) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 keyid (1:1-1:2)
-	│		 value: "_"
-	│		 whitespace: ""
-	│		 private: false
-	├─2 eof (1:2-1:2)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 keyid "_" (1:1-1:2, 0-1)
+│     whitespace: ""
+│     private: false
+└─2 eof null (1:2-1:2, 1-1)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/keyid > should tokenize identifier and keywords (chars.underscore, start) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 keyid (1:1-1:4)
-	│		 value: "_id"
-	│		 whitespace: ""
-	│		 private: false
-	├─2 eof (1:4-1:4)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 keyid "_id" (1:1-1:4, 0-3)
+│     whitespace: ""
+│     private: false
+└─2 eof null (1:4-1:4, 3-3)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/keyid > should tokenize identifier and keywords (keyword) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 keyid (1:1-1:5)
-	│		 value: "this"
-	│		 whitespace: ""
-	│		 private: true
-	├─2 eof (1:5-1:5)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 keyid "this" (1:1-1:5, 0-4)
+│     whitespace: ""
+│     private: true
+└─2 eof null (1:5-1:5, 4-4)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/keyid > should tokenize identifier and keywords (private identifier) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 keyid (1:1-1:9)
-	│		 value: "#indices"
-	│		 whitespace: ""
-	│		 private: true
-	├─2 eof (1:9-1:9)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 keyid "#indices" (1:1-1:9, 0-8)
+│     whitespace: ""
+│     private: true
+└─2 eof null (1:9-1:9, 8-8)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/keyid > should tokenize identifier and keywords (public identifier) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 keyid (1:1-1:6)
-	│		 value: "keyid"
-	│		 whitespace: ""
-	│		 private: true
-	├─2 eof (1:6-1:6)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 keyid "keyid" (1:1-1:6, 0-5)
+│     whitespace: ""
+│     private: true
+└─2 eof null (1:6-1:6, 5-5)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/keyid > should tokenize identifier and keywords (unicode escape sequence) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 keyid (1:1-1:3)
-	│		 value: "你好"
-	│		 whitespace: ""
-	│		 private: true
-	├─2 eof (1:3-1:3)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 keyid "你好" (1:1-1:3, 0-2)
+│     whitespace: ""
+│     private: true
+└─2 eof null (1:3-1:3, 2-2)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/keyid > should tokenize identifier and keywords (unicode escape sequence, escaped) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 keyid (1:1-1:13)
-	│		 value: "\\\\u4F60\\\\u597D"
-	│		 whitespace: ""
-	│		 private: true
-	├─2 eof (1:13-1:13)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 keyid "\\\\u4F60\\\\u597D" (1:1-1:13, 0-12)
+│     whitespace: ""
+│     private: true
+└─2 eof null (1:13-1:13, 12-12)
+      whitespace: ""
 `;

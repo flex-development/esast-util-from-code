@@ -2,136 +2,104 @@
 
 exports[`integration:constructs/string > double quote > should tokenize string (escaped opener) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 string (1:1-1:5)
-	│		 value: "\\"\\\\\\"\\""
-	│		 whitespace: ""
-	├─2 eof (1:5-1:5)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 string "\\"\\\\\\"\\"" (1:1-1:5, 0-4)
+│     whitespace: ""
+└─2 eof null (1:5-1:5, 4-4)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/string > double quote > should tokenize string (unterminated, eof) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 string (1:1-1:8)
-	│		 value: "\\"string"
-	│		 whitespace: ""
-	├─2 eof (1:8-1:8)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 string "\\"string" (1:1-1:8, 0-7)
+│     whitespace: ""
+└─2 eof null (1:8-1:8, 7-7)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/string > double quote > should tokenize string (unterminated, line ending) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 string (1:1-1:8)
-	│		 value: "\\"string"
-	│		 whitespace: ""
-	├─2 eof (2:1-2:1)
-	│		 value: null
-	│		 whitespace: "\\n"
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 string "\\"string" (1:1-1:8, 0-7)
+│     whitespace: ""
+└─2 eof null (2:1-2:1, 8-8)
+      whitespace: "\\n"
 `;
 
 exports[`integration:constructs/string > double quote > should tokenize string (unterminated, opener mismatch) 1`] = `
 tokens[4]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 string (1:1-1:8)
-	│		 value: "\\"string"
-	│		 whitespace: ""
-	├─2 string (1:8-1:10)
-	│		 value: "''"
-	│		 whitespace: ""
-	├─3 eof (1:10-1:10)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 string "\\"string" (1:1-1:8, 0-7)
+│     whitespace: ""
+├─2 string "''" (1:8-1:10, 7-9)
+│     whitespace: ""
+└─3 eof null (1:10-1:10, 9-9)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/string > double quote > should tokenize string 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 string (1:1-1:9)
-	│		 value: "\\"string\\""
-	│		 whitespace: ""
-	├─2 eof (1:9-1:9)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 string "\\"string\\"" (1:1-1:9, 0-8)
+│     whitespace: ""
+└─2 eof null (1:9-1:9, 8-8)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/string > single quote > should tokenize string (escaped opener) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 string (1:1-1:5)
-	│		 value: "'\\\\''"
-	│		 whitespace: ""
-	├─2 eof (1:5-1:5)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 string "'\\\\''" (1:1-1:5, 0-4)
+│     whitespace: ""
+└─2 eof null (1:5-1:5, 4-4)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/string > single quote > should tokenize string (unterminated, eof) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 string (1:1-1:8)
-	│		 value: "'string"
-	│		 whitespace: ""
-	├─2 eof (1:8-1:8)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 string "'string" (1:1-1:8, 0-7)
+│     whitespace: ""
+└─2 eof null (1:8-1:8, 7-7)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/string > single quote > should tokenize string (unterminated, line ending) 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 string (1:1-1:8)
-	│		 value: "'string"
-	│		 whitespace: ""
-	├─2 eof (2:1-2:1)
-	│		 value: null
-	│		 whitespace: "\\n"
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 string "'string" (1:1-1:8, 0-7)
+│     whitespace: ""
+└─2 eof null (2:1-2:1, 8-8)
+      whitespace: "\\n"
 `;
 
 exports[`integration:constructs/string > single quote > should tokenize string (unterminated, opener mismatch) 1`] = `
 tokens[4]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 string (1:1-1:8)
-	│		 value: "'string"
-	│		 whitespace: ""
-	├─2 string (1:8-1:10)
-	│		 value: "\\"\\""
-	│		 whitespace: ""
-	├─3 eof (1:10-1:10)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 string "'string" (1:1-1:8, 0-7)
+│     whitespace: ""
+├─2 string "\\"\\"" (1:8-1:10, 7-9)
+│     whitespace: ""
+└─3 eof null (1:10-1:10, 9-9)
+      whitespace: ""
 `;
 
 exports[`integration:constructs/string > single quote > should tokenize string 1`] = `
 tokens[3]
-	├─0 sof (1:1-1:1)
-	│		 value: null
-	│		 whitespace: ""
-	├─1 string (1:1-1:9)
-	│		 value: "'string'"
-	│		 whitespace: ""
-	├─2 eof (1:9-1:9)
-	│		 value: null
-	│		 whitespace: ""
+├─0 sof null (1:1-1:1, 0-0)
+│     whitespace: ""
+├─1 string "'string'" (1:1-1:9, 0-8)
+│     whitespace: ""
+└─2 eof null (1:9-1:9, 8-8)
+      whitespace: ""
 `;
