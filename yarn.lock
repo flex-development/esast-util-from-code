@@ -1532,7 +1532,7 @@ __metadata:
     "@flex-development/commitlint-config": "npm:1.0.1"
     "@flex-development/decorator-regex": "npm:2.0.0"
     "@flex-development/docast": "npm:1.0.0-alpha.17"
-    "@flex-development/esast": "flex-development/esast#c27d63427454b617f92dc1f01a82f3344fca7dc4"
+    "@flex-development/esast": "flex-development/esast#bc319cc4d5b14e2a55767bbd60ac2bfcb9ae40b2"
     "@flex-development/esm-types": "npm:2.0.0"
     "@flex-development/grease": "npm:3.0.0-alpha.9"
     "@flex-development/mkbuild": "npm:1.0.0-alpha.23"
@@ -1541,6 +1541,7 @@ __metadata:
     "@flex-development/tutils": "npm:6.0.0-alpha.25"
     "@flex-development/unist-util-builder": "npm:2.0.0"
     "@flex-development/unist-util-inspect": "npm:1.0.0"
+    "@flex-development/unist-util-parsec": "flex-development/unist-util-parsec#commit=ce79a1bddd07cc6fbe97d20592e930eb77b5b756"
     "@flex-development/unist-util-stringify-position": "npm:1.0.0"
     "@flex-development/unist-util-types": "npm:1.6.1"
     "@flex-development/vfile-lexer": "flex-development/vfile-lexer#commit=a4837a7d1a9c63036ed522c0e844cd7c0ed78428"
@@ -1607,15 +1608,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@flex-development/esast@flex-development/esast#c27d63427454b617f92dc1f01a82f3344fca7dc4":
+"@flex-development/esast@flex-development/esast#bc319cc4d5b14e2a55767bbd60ac2bfcb9ae40b2":
   version: 1.0.0-alpha.5
-  resolution: "@flex-development/esast@https://github.com/flex-development/esast.git#commit=c27d63427454b617f92dc1f01a82f3344fca7dc4"
+  resolution: "@flex-development/esast@https://github.com/flex-development/esast.git#commit=bc319cc4d5b14e2a55767bbd60ac2bfcb9ae40b2"
   dependencies:
     "@flex-development/docast": "npm:1.0.0-alpha.17"
     "@flex-development/unist-util-types": "npm:1.4.0"
     "@types/mdast": "npm:4.0.3"
     "@types/unist": "npm:3.0.2"
-  checksum: 10/25ae4c7e99376f7f48e0992ffa333effbb886f8d248c89a69f0790e6cc97e9a186a72ea9379a4fdbde2dc5f764a45a8f94b00e2bc84562a2321d4b3eddaf8294
+  checksum: 10/698c10da68ad0a25cea8e51ec8a93650e2ac47738da881c10296795a15b3704473fddc1f60fe3ab4810dd7bf08c61918461237ef8c10902b98eea832622ead36
   languageName: node
   linkType: hard
 
@@ -1966,6 +1967,18 @@ __metadata:
     "@flex-development/unist-util-stringify-position": "npm:1.0.0"
     "@types/unist": "npm:3.0.2"
   checksum: 10/c1b81c3191e2be2bbbcff95f1a2e99afe4360cd72eebbe0b5401499fd9c89c9fa2e42adc7f875fbc7a6204bb75d33a2ad7f0b53a19bca4547182d784143a21d8
+  languageName: node
+  linkType: hard
+
+"@flex-development/unist-util-parsec@flex-development/unist-util-parsec#commit=ce79a1bddd07cc6fbe97d20592e930eb77b5b756":
+  version: 0.0.0
+  resolution: "@flex-development/unist-util-parsec@https://github.com/flex-development/unist-util-parsec.git#commit=ce79a1bddd07cc6fbe97d20592e930eb77b5b756"
+  dependencies:
+    "@flex-development/unist-util-builder": "npm:2.0.0"
+    "@flex-development/unist-util-types": "npm:1.6.1"
+    "@types/unist": "npm:3.0.2"
+    devlop: "npm:1.1.0"
+  checksum: 10/aa5aebac9e7f87e0ef2e2eda61144068645ef7b8ba47802668ff47e4fd2643622d4e4f985294e92dee275c320f97a124136be647065641a0128f495465d3c562
   languageName: node
   linkType: hard
 
