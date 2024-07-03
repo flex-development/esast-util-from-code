@@ -3,7 +3,26 @@
  * @module esast-util-from-code/parsers/Grammar
  */
 
-import type { PunctuatorToken } from '#src/types'
+import type {
+  ApplyOperatorValue,
+  BinaryOperatorResult,
+  Operator,
+  PunctuatorToken,
+  UpdateOperatorResult
+} from '#src/types'
+import type {
+  ArithmeticOperator,
+  AssignmentOperator,
+  BitwiseBinaryOperator,
+  BitwiseShiftOperator,
+  EqualityOperator,
+  ImportAssertionOperator,
+  LogicalOperator,
+  RelationalOperator,
+  UnaryOperator,
+  UnaryTypeOperator,
+  UpdateOperator
+} from '@flex-development/esast'
 import type {
   Runner as P,
   RepNResult,
@@ -33,6 +52,19 @@ abstract class Grammar {
   public abstract get ampersand(): P<TT, PunctuatorToken>
 
   /**
+   * Get the arithmetic operator parser.
+   *
+   * @see {@linkcode ArithmeticOperator}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, ArithmeticOperator>} Arithmetic operator parser
+   */
+  public abstract get arithmeticOperator(): P<TT, ArithmeticOperator>
+
+  /**
    * Get the arrow (`=>`) parser.
    *
    * @see {@linkcode PunctuatorToken}
@@ -45,6 +77,19 @@ abstract class Grammar {
    * @return {P<TT, RepNResult<2, PunctuatorToken>>} Arrow parser
    */
   public abstract get arrow(): P<TT, RepNResult<2, PunctuatorToken>>
+
+  /**
+   * Get the assignment operator parser.
+   *
+   * @see {@linkcode AssignmentOperator}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, AssignmentOperator>} Assignment operator parser
+   */
+  public abstract get assignmentOperator(): P<TT, AssignmentOperator>
 
   /**
    * Get the asterisk (`*`) parser.
@@ -115,6 +160,45 @@ abstract class Grammar {
    * @return {P<TT, PunctuatorToken>} Bar parser
    */
   public abstract get bar(): P<TT, PunctuatorToken>
+
+  /**
+   * Get the binary operator parser.
+   *
+   * @see {@linkcode BinaryOperatorResult}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, BinaryOperatorResult>} Binary operator parser
+   */
+  public abstract get binaryOperator(): P<TT, BinaryOperatorResult>
+
+  /**
+   * Get the bitwise binary operator parser.
+   *
+   * @see {@linkcode BitwiseBinaryOperator}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, BitwiseBinaryOperator>} Bitwise binary operator parser
+   */
+  public abstract get bitwiseBinaryOperator(): P<TT, BitwiseBinaryOperator>
+
+  /**
+   * Get the bitwise shift operator parser.
+   *
+   * @see {@linkcode BitwiseShiftOperator}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, BitwiseShiftOperator>} Bitwise shift operator parser
+   */
+  public abstract get bitwiseShiftOperator(): P<TT, BitwiseShiftOperator>
 
   /**
    * Get the caret (`^`) parser.
@@ -215,6 +299,19 @@ abstract class Grammar {
   public abstract get equal(): P<TT, PunctuatorToken>
 
   /**
+   * Get the equality operator parser.
+   *
+   * @see {@linkcode EqualityOperator}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, EqualityOperator>} Equality operator parser
+   */
+  public abstract get equalityOperator(): P<TT, EqualityOperator>
+
+  /**
    * Get the exclamation mark (`!`) parser.
    *
    * @see {@linkcode PunctuatorToken}
@@ -255,6 +352,19 @@ abstract class Grammar {
    * @return {P<TT, PunctuatorToken>} Hash symbol parser
    */
   public abstract get hash(): P<TT, PunctuatorToken>
+
+  /**
+   * Get the import assertion operator parser.
+   *
+   * @see {@linkcode ImportAssertionOperator}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, ImportAssertionOperator>} Import assertion operator parser
+   */
+  public abstract get importAssertionOperator(): P<TT, ImportAssertionOperator>
 
   /**
    * Get the left brace (`{`) parser.
@@ -299,6 +409,19 @@ abstract class Grammar {
   public abstract get leftParen(): P<TT, PunctuatorToken>
 
   /**
+   * Get the logical operator parser.
+   *
+   * @see {@linkcode LogicalOperator}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, LogicalOperator>} Logical operator parser
+   */
+  public abstract get logicalOperator(): P<TT, LogicalOperator>
+
+  /**
    * Get the less than symbol (`<`) parser.
    *
    * @see {@linkcode PunctuatorToken}
@@ -325,6 +448,23 @@ abstract class Grammar {
    * @return {P<TT, PunctuatorToken>} Minus sign parser
    */
   public abstract get minus(): P<TT, PunctuatorToken>
+
+  /**
+   * Get the optional chaining operator (`?.`) parser.
+   *
+   * @see {@linkcode PunctuatorToken}
+   * @see {@linkcode RepNResult}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, RepNResult<2, PunctuatorToken>>} Optional chaining operator
+   * parser
+   */
+  public abstract get optionalChainingOperator(
+    //
+  ): P<TT, RepNResult<2, PunctuatorToken>>
 
   /**
    * Get the percent sign (`%`) parser.
@@ -367,6 +507,19 @@ abstract class Grammar {
    * @return {P<TT, PunctuatorToken>} Question mark parser
    */
   public abstract get question(): P<TT, PunctuatorToken>
+
+  /**
+   * Get the relational operator parser.
+   *
+   * @see {@linkcode RelationalOperator}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, RelationalOperator>} Relational operator parser
+   */
+  public abstract get relationalOperator(): P<TT, RelationalOperator>
 
   /**
    * Get the right brace (`}`) parser.
@@ -451,6 +604,65 @@ abstract class Grammar {
    * @return {P<TT, PunctuatorToken>} Tilde parser
    */
   public abstract get tilde(): P<TT, PunctuatorToken>
+
+  /**
+   * Get the unary operator parser.
+   *
+   * @see {@linkcode UnaryOperator}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, UnaryOperator>} Unary operator parser
+   */
+  public abstract get unaryOperator(): P<TT, UnaryOperator>
+
+  /**
+   * Get the unary type operator parser.
+   *
+   * @see {@linkcode UnaryTypeOperator}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, UnaryTypeOperator>} Unary type operator parser
+   */
+  public abstract get unaryTypeOperator(): P<TT, UnaryTypeOperator>
+
+  /**
+   * Get the update operator parser.
+   *
+   * @see {@linkcode UpdateOperatorResult}
+   * @see {@linkcode UpdateOperator}
+   *
+   * @public
+   * @abstract
+   * @instance
+   *
+   * @return {P<TT, UpdateOperatorResult>} Update operator parser
+   */
+  public abstract get updateOperator(): P<TT, UpdateOperatorResult>
+
+  /**
+   * Create an operator.
+   *
+   * @see {@linkcode ApplyOperatorValue}
+   * @see {@linkcode Operator}
+   *
+   * @protected
+   * @abstract
+   * @instance
+   *
+   * @template {Operator} T - Operator
+   *
+   * @param {ApplyOperatorValue} value - Apply callback value
+   * @return {T} Operator
+   */
+  protected abstract applyOperator<T extends Operator>(
+    value: ApplyOperatorValue
+  ): T
 
   /**
    * Forbid leading whitespace.

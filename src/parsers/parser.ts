@@ -8,19 +8,19 @@ import Lexer from '#src/lexer'
 import type Token from '#src/token'
 import type { Value, VFile } from 'vfile'
 import type Grammar from './grammar'
-import PunctuatorParser from './punctuator.parser'
+import OperatorParser from './operator.parser'
 
 /**
  * ECMAScript parser.
  *
  * @see {@linkcode Grammar}
- * @see {@linkcode PunctuatorParser}
+ * @see {@linkcode OperatorParser}
  *
  * @class
- * @extends {PunctuatorParser}
+ * @extends {OperatorParser}
  * @implements {Grammar}
  */
-class Parser extends PunctuatorParser implements Grammar {
+class Parser extends OperatorParser implements Grammar {
   /**
    * Head token.
    *

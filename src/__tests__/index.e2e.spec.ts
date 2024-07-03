@@ -11,6 +11,7 @@ describe('e2e:esast-util-from-code', () => {
       'AbstractParser',
       'Grammar',
       'Lexer',
+      'OperatorParser',
       'Parser',
       'PunctuatorParser',
       'Token',
