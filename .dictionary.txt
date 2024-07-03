@@ -19,6 +19,7 @@ jchen
 kaisugi
 kata
 keyid
+kmid
 lcov
 lintstagedrc
 mdast
@@ -30,6 +31,7 @@ pathe
 pkgs
 preid
 shfmt
+succ
 tokenizes
 unstub
 vates

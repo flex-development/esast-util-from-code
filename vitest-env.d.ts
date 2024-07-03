@@ -1,4 +1,18 @@
-/// <reference types='vitest/globals' />
+declare global {
+  const afterAll: typeof import('vitest')['afterAll']
+  const afterEach: typeof import('vitest')['afterEach']
+  const beforeAll: typeof import('vitest')['beforeAll']
+  const beforeEach: typeof import('vitest')['beforeEach']
+  const describe: typeof import('vitest')['describe']
+  const expectTypeOf: typeof import('vitest')['expectTypeOf']
+  const it: typeof import('vitest')['it']
+  const onTestFailed: typeof import('vitest')['onTestFailed']
+  const onTestFinished: typeof import('vitest')['onTestFinished']
+  const vi: typeof import('vitest')['vitest']
+  const vitest: typeof import('vitest')['vitest']
+
+  var expect: typeof import('vitest')['expect']
+}
 
 interface ImportMetaEnv {
   readonly BASE_URL: string
@@ -24,3 +38,5 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv
 }
+
+export {}

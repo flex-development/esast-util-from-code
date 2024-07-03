@@ -23,6 +23,14 @@ export default [
     ]
   },
   {
+    files: ['__tests__/setup/expect.ts'],
+    languageOptions: {
+      globals: {
+        expect: true
+      }
+    }
+  },
+  {
     files: ['src/constructs/*.ts'],
     rules: {
       'unicorn/no-this-assignment': 0

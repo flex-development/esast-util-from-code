@@ -3,4 +3,5 @@
  * @module tests/setup
  */
 
+import './expect'
 import './faker'

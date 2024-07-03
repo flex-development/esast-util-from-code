@@ -1,6 +1,6 @@
 /**
  * @file Test Utilities - inspect
- * @module tests/utils/isToken
+ * @module tests/utils/inspect
  */
 
 import type Token from '#src/token'
